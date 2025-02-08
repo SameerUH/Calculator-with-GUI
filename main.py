@@ -13,9 +13,18 @@ Features:
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods = ["POST", "GET"])
 def hello_world():
-    return render_template("main_screen.html")
+    if request.method == "POST":
+        number = request.form.get('number')
+        operator = request.form.get('operator')
+        print(number, operator)
+        if number:
+            return render_template("main_screen.html", display = number)
+        elif operator:
+            return render_template("main_screen.html", display = operator)
+    else:
+        return render_template("main_screen.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

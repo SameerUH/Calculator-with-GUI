@@ -1,0 +1,7 @@
+Today was another brief session where I managed to output numbers that were input into the calculator and display them into the terminal. After I added a <h2> tag with a variable 'display' and outputted the inputs there, acting as the display for the calculator.
+
+I tried after to add operators such as +, - and = but when I tried and request both of them in main.py I would end up with an error so I changes 'request.form' to 'request.form.get' which made the other values return 'None' when they weren't pressed.
+
+In the future I'll probably try and find a better way request multiple values at once when one button is clicked and then I'll start making the operators work with the numbers, so that I can start making equations.
+
+I need to remember that I'm still relearning Flask as I'm coding it, so using research using documentation or looking over old code will probably be beneficial to me.
