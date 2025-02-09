@@ -1,0 +1,7 @@
+After doing further research I've realised that I need to learn JavaScript if I want to make this easier for myself and to handle front-end interfaces better.
+
+I tried to find a way to handle multiple inputs before submitting them to main.py but I couldn't find a way as I would end up having syntax and logic errors where it would either say "TypeError: 'ImmutableMultiDict' object is not callable' or it would only keep track of one variable at a time, either the number inputted or the operator inputted. Even when I tried to use a class or object it still wouldn't work.
+
+Going to spend the next couple of days learning JavaScript and I'll try and upload them to my GitHub to showcase my development and skills.
+
+I'll probably put a halt on this project and do a JavaScript project instead to help master and refine those skills and add it to my programming repetoire. This does suck and makes me feel bad but I'm hoping my patience and motivation will help me thorugh this, I'm honestly not sure what to expect when learning JavaScript.

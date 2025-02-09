@@ -13,16 +13,23 @@ Features:
 
 app = Flask(__name__)
 
+class Inputs():
+    def __init__(self):
+        self.first_num = "unknown"
+        self.first_operation = "unknown"
+    
+    def update(self, first_num, first_operation):
+        self.first_num = first_num
+        self.first_operation = first_operation
+
+user = Inputs()
+
 @app.route("/", methods = ["POST", "GET"])
-def hello_world():
+def main_screen():
     if request.method == "POST":
         number = request.form.get('number')
         operator = request.form.get('operator')
-        print(number, operator)
-        if number:
-            return render_template("main_screen.html", display = number)
-        elif operator:
-            return render_template("main_screen.html", display = operator)
+        return render_template("main_screen.html", display = (number or operator))
     else:
         return render_template("main_screen.html")
 
